@@ -21,3 +21,7 @@ class DisposableEmailChecker():
                 return True
 
         return False
+
+
+email_checker = DisposableEmailChecker()
+email_is_disposable = lambda x: email_checker.is_disposable(x)
